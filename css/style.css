@@ -223,6 +223,25 @@ margin-top: 30px;
   visibility: hidden;
   pointer-events: none;
 }
+.modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-right: 40px;
+  width: 448px;
+height: 342px;
+}
+.modal-email,
+.modal-tel,
+.modal-name {
+  display: flex;
+  width: 100%;
+
+}
+
+
 .features {
   background-color: var(--primery-background-color);
   display: flex;

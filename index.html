@@ -355,21 +355,48 @@
                     </use>
                 </svg>
             </button>
+            <form name="signup_form" autocomplete="on" novalidate>
+                <div class="modal-container">
+                    <b>Оставьте свои данные, мы вам перезвоним</b>
+                    <div class="modal-name">
+                        <label for="name">
+                        Имя
+                        <input class="modal-aria" type="text" name="name" id="name" placeholder="Иван Иванов"/>
+                        </label>
+                    </div>
+                    <div class="modal-tel">
+                        <label for="tel">
+                        Телефон
+                        <input class="modal-aria" type="tel" name="tel" id="tel" placeholder="+380111111111"/>
+                        </label>
+                    </div>
+                    <div class="modal-email">
+                        <label for="email">
+                        Почта
+                        <input class="modal-aria" type="email" name="email" id="email" placeholder="ivanov@mail"/>
+                        </label> 
+                    </div>
+                    <div class="modal-comments ">
+                        <label for="comments">
+                        Коментарий
+                        <textarea name="comments" id="comments" placeholder="Введите текст"></textarea>
+                    </label> 
+                    </div>
+                </div>
+                <div class="modal-form-field">
+                    <input type="checkbox" id="check" name="policy" class="visually-hidden checkbox">
+                    <label for="check" class="check-label">
+                        <span class="icon-check">
+                            <svg class="" width="11" height="8">
+                                <use href="./images/sprite.svg#icon-check"></use>
+                            </svg>
+                        </span>
+                        Это текс для чекбокса с <a href="">политикой</a></label>
+                </div>
+                <button type="submit" class="btn form-btn">отправить</button>
+              </form> 
         </div>
-    </div>
-    <form name="signup_form" autocomplete="on" novalidate>
-        <label>
-          Email
-          <input type="email" name="email" />
-        </label>
-      
-        <label>
-          Password
-          <input type="password" name="password" />
-        </label>
-      
-        <button type="submit">Submit</button>
-      </form>      
+    </div> 
     <script src="./js/modal.js"></script>
 </body>
 </html>
